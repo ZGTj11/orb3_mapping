@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libgtest.so -o ../lib/libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o   -L/home/robot/catkin_ws/devel/lib  -L/opt/ros/noetic/lib  -Wl,-rpath,/home/robot/catkin_ws/devel/lib:/opt/ros/noetic/lib -lpthread 
