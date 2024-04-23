@@ -3,7 +3,8 @@
 解决了建图模块不建图的问题
 
 修改部分：
- if(mbuseExact)
+
+        if(mbuseExact)
 	{
 		syncExact = new message_filters::Synchronizer<ExactSyncPolicy>(ExactSyncPolicy(queueSize), *subImageColor,*subImageDepth, *tcw_sub, *path_sub);
 		syncExact->registerCallback(boost::bind(&PointCloudMapper::callback, this, _1, _2, _3, _4));
